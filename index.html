@@ -27,7 +27,9 @@
                     >
                     <ul class="navigation">
                         <li>
-                            <a href="./index.html" class="nav-item">Agencja</a>
+                            <a href="./index.html" class="nav-item here-you-are"
+                                >Agencja</a
+                            >
                         </li>
                         <li>
                             <a href="./portfolio.html" class="nav-item"
@@ -58,7 +60,9 @@
         <main>
             <section class="solutions">
                 <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button type="button" class="order">Zamów usługę</button>
+                <button type="button" class="order" data-modal-open>
+                    Zamów usługę
+                </button>
             </section>
             <section>
                 <div class="container">
@@ -123,28 +127,43 @@
                     <h2 class="introduce">Czym się zajmujemy</h2>
                     <ul class="our-services">
                         <li>
-                            <img
-                                src="images/box1.jpg"
-                                alt="Dłonie na klawiaturze przed tabletem"
-                                width="370"
-                                height="294"
-                            />
+                            <div class="our-services-img">
+                                <img
+                                    src="images/box1.jpg"
+                                    alt="Dłonie na klawiaturze przed tabletem"
+                                    width="370"
+                                    height="294"
+                                />
+                                <p class="our-services-label">
+                                    Aplikacje komputerowe
+                                </p>
+                            </div>
                         </li>
                         <li>
-                            <img
-                                src="images/box2.jpg"
-                                alt="Telefon w dłoni przed laptopem"
-                                width="370"
-                                height="294"
-                            />
+                            <div class="our-services-img">
+                                <img
+                                    src="images/box2.jpg"
+                                    alt="Telefon w dłoni przed laptopem"
+                                    width="370"
+                                    height="294"
+                                />
+                                <p class="our-services-label">
+                                    Aplikacje mobilne
+                                </p>
+                            </div>
                         </li>
                         <li>
-                            <img
-                                src="images/box3.jpg"
-                                alt="Paleta kolorów na tablecie"
-                                width="370"
-                                height="294"
-                            />
+                            <div class="our-services-img">
+                                <img
+                                    src="images/box3.jpg"
+                                    alt="Paleta kolorów na tablecie"
+                                    width="370"
+                                    height="294"
+                                />
+                                <p class="our-services-label">
+                                    Rozwiązania graficzne
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -540,5 +559,15 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close-btn" data-modal-close>
+                    <svg class="icon-close" tabindex="1" width="18" height="18">
+                        <use href="./images/icons.svg#icon-icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
